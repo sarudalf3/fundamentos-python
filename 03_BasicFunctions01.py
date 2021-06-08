@@ -41,7 +41,7 @@ print(a(1,2) + a(2,3))
 def a(b,c):
     return str(b)+str(c)
 print(a(2,5))
-#print 25
+#print "25"
 
 #8
 def a():
@@ -53,7 +53,7 @@ def a():
         return 10
     return 7
 print(a())
-#print 199 10
+#print 100 10
 
 #9
 def a(b,c):
@@ -62,6 +62,7 @@ def a(b,c):
     else:
         return 14
     return 3
+
 print(a(2,3))
 print(a(5,3))
 print(a(2,3) + a(5,3))

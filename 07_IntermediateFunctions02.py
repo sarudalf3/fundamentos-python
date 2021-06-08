@@ -34,12 +34,32 @@ students = [
     {'first_name' : 'KB', 'last_name' : 'Tonel'}
     ]
 
-for val in students:
-    print('first_name - '+val['first_name']+', last_name - '+val['last_name'])
-
 # La salida debería ser: (Está bien si cada clave y valor quedan en dos líneas separadas)
-# Bonus: Hacer que aparezcan exactamente así!
 #first_name - Michael, last_name - Jordan
 #first_name - John, last_name - Rosales
 #first_name - Mark, last_name - Guillen
 #first_name - KB, last_name - Tonel
+
+for val in students:
+    name = list(val.keys())
+    value = list(val.values())    
+    print(name[0]+' - '+value[0]+', '+name[1]+' - '+value[1])
+
+def iterateDictionary2(key, dict):
+    for val in dict:
+        print(val[key])
+
+iterateDictionary2('first_name', students)
+iterateDictionary2('last_name', students)
+
+#4- Dict loop using list names
+dojo = {
+    'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+    'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+}
+
+for k, v in dojo.items():
+    print(len(v),k)
+    for sub in v:
+        print(sub)
+    print('')
