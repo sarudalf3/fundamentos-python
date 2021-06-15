@@ -59,7 +59,7 @@ dojo = {
 }
 
 for k, v in dojo.items():
-    print(len(v),k)
+    print(len(v),k.upper())
     for sub in v:
         print(sub)
     print('')

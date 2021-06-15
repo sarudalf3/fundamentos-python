@@ -1,0 +1,3 @@
+[submodule "tarea_opencv"]
+	path = tarea_opencv
+	url = https://github.com/sarudalf3/tarea_opencv.git
